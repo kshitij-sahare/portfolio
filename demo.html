@@ -20,6 +20,18 @@
 
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-QD9ESD1D9K"></script>
   <style>
+  .home-hero__socials {
+    position: fixed;
+  }
+
+    .main-footer__social-cont{
+    display: flex;
+    margin: -15px;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+    
     iconify-icon {
       font-size: 25px;
       margin: 5px
@@ -29,11 +41,15 @@
       transform: scale(1.5);
       transition: ease-in 0.3s;
     }
-    footer{
+    .main-footer__upper{
       height: 100px;
       width: 100%;
-      background-color: black;
+      /* background-color: black; */
     }
+    
+.footer{
+  display: none;
+}
     @media screen and (max-width: 600px) {
 
       .hover:hover {
@@ -41,8 +57,12 @@
       transition: ease-in 0.3s;
     }
 
-footer{
-  height: 50px;
+.main-footer__upper{
+  background-color: white;
+  height: 100px;
+}
+.footer{
+  display: block;
 }
     }
   </style>
@@ -61,7 +81,7 @@ footer{
         <ol class="breadcrumb">
         <ul class="header__links">
           <li class="header__link-wrapper">
-            <a href="./" class="header__link"> Home </a>
+            <a href="#" class="header__link"> Home </a>
           </li>
           <li class="header__link-wrapper">
             <a href="#about" class="header__link"> About </a>
@@ -101,6 +121,9 @@ footer{
           </li>
           <li class="header__sm-menu-link">
             <a href="#certifications" > Certification </a>
+          </li>
+          <li class="header__sm-menu-link">
+            <a href="#footer" > Social Links </a>
           </li>
         </ul>
       </div>
@@ -356,44 +379,37 @@ footer{
     </div>
   </section>
 
-  <!-- <footer class="main-footer">
-    <div class="main-container">
-      <div class="main-footer__upper">
-        <div class="main-footer__row main-footer__row-1">
-          <h2 class="heading heading-sm main-footer__heading-sm">
-            <span id="footer">My Contact</span>
-          </h2>
-          <div class="main-footer__social-cont">
-            <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/kshitij-sahare">
-              <iconify-icon alt="Kshitij Sahare Gmail" icon="grommet-icons:linkedin"></iconify-icon>
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/kshitij-sahare">
-              <iconify-icon alt="Kshitij Sahare Gmail" icon="jam:github"></iconify-icon>
-            </a>
-            <a target="_blank" rel="noreferrer" href="mailto:kshitisahare1@gmail.com">
-              <iconify-icon alt="Kshitij Sahare Gmail" icon="fluent:mail-28-filled"></iconify-icon>
-            </a>
-            <a target="_blank" rel="noreferrer" href="tel:+91 9325734045">
-              <iconify-icon icon="simple-icons:leetcode"></iconify-icon>
-            </a>
-          </div>
-        </div>
-        <div class="main-footer__row main-footer__row-2">
-          <h2 class="heading heading-sm text-lt">Kshitij Sahare</h2>
-          <p class="main-footer__short-desc">
-            A Full Stack developer
-          </p>
-        </div>
-      </div>
-    </div>
+  <footer class="main-footer">
+    
   </footer>
- -->
+
  
 </body>
 
-<footer class="footer">
-  <pre class="text-primary" style="color: white; text-align: right; padding-top: 10px;"> ~Kshitij Sahare        </pre>
+<footer class="footer" id="footer" >
   
+
+  <div class="main-container" >
+    <div class="main-footer__upper" style="    margin-left: -14px;
+    width: 110%; background-color: rgb(241, 187, 125)">
+      <div class="main-footer__row main-footer__row-1">
+        <div class="main-footer__social-cont">
+          <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/kshitij-sahare">
+            <iconify-icon alt="Kshitij Sahare Gmail" icon="grommet-icons:linkedin"></iconify-icon>
+          </a>
+          <a target="_blank" rel="noreferrer" href="https://github.com/kshitij-sahare">
+            <iconify-icon alt="Kshitij Sahare Gmail" icon="jam:github"></iconify-icon>
+          </a>
+          <a target="_blank" rel="noreferrer" href="mailto:kshitisahare1@gmail.com">
+            <iconify-icon alt="Kshitij Sahare Gmail" icon="fluent:mail-28-filled"></iconify-icon>
+          </a>
+          <a target="_blank" rel="noreferrer" href="tel:+91 9325734045">
+            <iconify-icon icon="simple-icons:leetcode"></iconify-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 <script src="./index.js"></script>
 </html>
